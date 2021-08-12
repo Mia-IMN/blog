@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            display: flex;
+            padding-left: 100px;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        form {
+            display: block;
+            padding: 50px 0 50px 50px;
+            width: 270px;
+            height: 270px;
+            margin-left: 100px;
+        }
+
+        .second-inp {
+            margin: 20px 0 0;
+            display:inline-flex;
+            flex-direction: column;
+        }
+        .first-inp {
+            display:inline-flex;
+            flex-direction: column;
+        }
+        .third-inp {
+            display:inline-flex;
+            flex-direction: column;
+        }
+
+        #btn {
+            background-color: rgb(255, 0, 221);
+            border: none;
+            border-radius: 15px;
+            width: 100px;
+            padding: 10px 0;
+            /* margin-top: 100px; */
+        }
+
+        .card{
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1 id="logo">Logo</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="/form">Create Blog</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form class="card">
+        <div class="first-inp">
+            <label for="title">Title</label>
+            <input type="text" id="title">
+        </div>
+        <div class="second-inp">
+            <label for="subject"> Subject</label>
+            <input type="text" id="subject">
+        </div>
+        <div class="third-inp">
+            <label for="message">Message</label>
+            <textarea id="textarea"></textarea>
+        </div>
+        <button id="btn">Submit</button>
+    </form>
+</body>
+
+</html>
